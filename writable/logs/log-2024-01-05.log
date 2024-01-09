@@ -1,0 +1,1283 @@
+CRITICAL - 2024-01-05 12:30:26 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-01-05 12:30:26 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-05 12:43:00 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 12:43:00 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-05 12:43:05 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 12:43:05 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-05 12:43:06 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 12:43:06 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-05 12:43:23 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+CRITICAL - 2024-01-05 12:43:23 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#22 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-01-05 12:56:57 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', NULL, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\peminjaman\app\Database\Seeds\LoanSeeder.php(54): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\LoanSeeder->run()
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2024-01-05 13:13:05 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+CRITICAL - 2024-01-05 13:13:05 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#22 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-05 13:13:09 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/dashboard', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('admin/dashboard')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+CRITICAL - 2024-01-05 13:13:09 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/dashboard', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('admin/dashboard')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/dashboard', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('admin/dashboard')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#22 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-05 13:13:11 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/dashboard', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('admin/dashboard')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+CRITICAL - 2024-01-05 13:13:11 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/dashboard', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('admin/dashboard')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'admin/dashboard', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('admin/dashboard')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#22 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-05 14:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-05 14:14:01 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', null)
+ 4 SYSTEMPATH\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+ 5 SYSTEMPATH\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(null, false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', [...])
+ 8 SYSTEMPATH\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', [])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+12 SYSTEMPATH\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+13 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+14 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', [...])
+15 SYSTEMPATH\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+17 SYSTEMPATH\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', [...])
+18 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+19 SYSTEMPATH\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+20 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 14:14:01 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(Object(Config\App), false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance('request', Object(Config\App))
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App))
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(539): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App))
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(655): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-05 14:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-05 14:40:06 --> Config\App::$baseURL is invalid.
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+ 2 SYSTEMPATH\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), null, null)
+ 3 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 4 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 6 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 8 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 9 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+10 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+11 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+12 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-01-05 14:40:07 --> Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL is invalid. in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php:199
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Exceptions.php(137): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\ConfigException))
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL is invalid.
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL(Object(Config\App))
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL(Object(Config\App), NULL, NULL)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#11 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#12 {main}
+in SYSTEMPATH\HTTP\SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-05 14:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-05 14:53:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-05 17:32:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_book_library', 3306, '', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionCon...')
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Collectors\Auth.php(76): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\BaseCollector.php(226): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(369): CodeIgniter\Debug\Toolbar->run(1704450769.5429, 2.1037, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('', 'after')
+#20 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#22 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionCon...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Collectors\Auth.php(76): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\BaseCollector.php(226): CodeIgniter\Shield\Collectors\Auth->display()
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(369): CodeIgniter\Debug\Toolbar->run(1704450769.5429, 2.1037, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('', 'after')
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#22 {main}
+CRITICAL - 2024-01-05 17:32:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 VENDORPATH\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 VENDORPATH\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionConfig')
+ 8 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+10 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 VENDORPATH\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 VENDORPATH\codeigniter4\shield\src\Collectors\Auth.php(76): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+13 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(226): CodeIgniter\Shield\Collectors\Auth->display()
+14 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+15 SYSTEMPATH\Debug\Toolbar.php(369): CodeIgniter\Debug\Toolbar->run(1704450769.54293, 2.1037, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+16 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+17 SYSTEMPATH\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+18 SYSTEMPATH\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('', 'after')
+19 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+ERROR - 2024-01-05 17:33:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_book_library', 3306, '', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionCon...')
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Collectors\Auth.php(76): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\BaseCollector.php(226): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(369): CodeIgniter\Debug\Toolbar->run(1704450825.0664, 0.5526, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('', 'after')
+#20 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#22 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionCon...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Collectors\Auth.php(76): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\BaseCollector.php(226): CodeIgniter\Shield\Collectors\Auth->display()
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(369): CodeIgniter\Debug\Toolbar->run(1704450825.0664, 0.5526, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('', 'after')
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#22 {main}
+CRITICAL - 2024-01-05 17:33:49 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 VENDORPATH\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 VENDORPATH\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionConfig')
+ 8 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+10 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 VENDORPATH\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 VENDORPATH\codeigniter4\shield\src\Collectors\Auth.php(76): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+13 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(226): CodeIgniter\Shield\Collectors\Auth->display()
+14 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+15 SYSTEMPATH\Debug\Toolbar.php(369): CodeIgniter\Debug\Toolbar->run(1704450825.066374, 0.5526, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+16 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+17 SYSTEMPATH\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+18 SYSTEMPATH\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('', 'after')
+19 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+ERROR - 2024-01-05 17:39:38 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_book_library', 3306, '', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionCon...')
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Collectors\Auth.php(76): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\BaseCollector.php(226): CodeIgniter\Shield\Collectors\Auth->display()
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(369): CodeIgniter\Debug\Toolbar->run(1704451173.8838, 0.4845, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('', 'after')
+#20 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#22 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionCon...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Collectors\Auth.php(76): CodeIgniter\Shield\Auth->__call('loggedIn', Array)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar\Collectors\BaseCollector.php(226): CodeIgniter\Shield\Collectors\Auth->display()
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Debug\Toolbar.php(369): CodeIgniter\Debug\Toolbar->run(1704451173.8838, 0.4845, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), NULL)
+#18 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('', 'after')
+#19 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#20 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#21 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#22 {main}
+CRITICAL - 2024-01-05 17:39:38 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 VENDORPATH\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 VENDORPATH\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionConfig')
+ 8 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+10 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 VENDORPATH\codeigniter4\shield\src\Auth.php(189): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 VENDORPATH\codeigniter4\shield\src\Collectors\Auth.php(76): CodeIgniter\Shield\Auth->__call('loggedIn', [])
+13 SYSTEMPATH\Debug\Toolbar\Collectors\BaseCollector.php(226): CodeIgniter\Shield\Collectors\Auth->display()
+14 SYSTEMPATH\Debug\Toolbar.php(93): CodeIgniter\Debug\Toolbar\Collectors\BaseCollector->getAsArray()
+15 SYSTEMPATH\Debug\Toolbar.php(369): CodeIgniter\Debug\Toolbar->run(1704451173.883773, 0.4845, Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+16 SYSTEMPATH\Filters\DebugToolbar.php(42): CodeIgniter\Debug\Toolbar->prepare(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response))
+17 SYSTEMPATH\Filters\Filters.php(210): CodeIgniter\Filters\DebugToolbar->after(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), null)
+18 SYSTEMPATH\CodeIgniter.php(522): CodeIgniter\Filters\Filters->run('', 'after')
+19 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+CRITICAL - 2024-01-05 17:47:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Books\BooksController.php on line 344.
+ 1 APPPATH\Controllers\Books\BooksController.php(344): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\peminjaman\\app\\Controllers\\Books\\BooksController.php', 344)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Books\BooksController->delete('inventore-blanditiis43219')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books\BooksController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+CRITICAL - 2024-01-05 17:48:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Books\BooksController.php on line 344.
+ 1 APPPATH\Controllers\Books\BooksController.php(344): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\peminjaman\\app\\Controllers\\Books\\BooksController.php', 344)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Books\BooksController->delete('doloribus-illum38340')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books\BooksController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+CRITICAL - 2024-01-05 17:49:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Books\BooksController.php on line 344.
+ 1 APPPATH\Controllers\Books\BooksController.php(344): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\peminjaman\\app\\Controllers\\Books\\BooksController.php', 344)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Books\BooksController->delete('saepe-eveniet-impedit-at-ullam64484')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books\BooksController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+ERROR - 2024-01-05 17:51:27 --> mysqli_sql_exception: Table 'db_book_library.book_stock' doesn't exist in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\peminjaman\app\Controllers\Books\BooksController.php(63): CodeIgniter\BaseModel->paginate(20, 'books')
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Books\BooksController->index()
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books\BooksController))
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-01-05 17:51:27 --> Table 'db_book_library.book_stock' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `books`
+LEFT JOIN `book_stock` ON `books`.`id` = `book_stock`.`book_id`
+LEFT JOIN `categories` ON `books`.`category_id` = `categories`.`id`
+LEFT JOIN `racks` ON `books`.`rack_id` = `racks`.`id`
+WHERE `books`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Books\BooksController.php(63): CodeIgniter\BaseModel->paginate(20, 'books')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Books\BooksController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books\BooksController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+ERROR - 2024-01-05 17:51:30 --> mysqli_sql_exception: Table 'db_book_library.book_stock' doesn't exist in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\peminjaman\app\Controllers\Dashboard\DashboardController.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\peminjaman\app\Controllers\Dashboard\DashboardController.php(41): App\Controllers\Dashboard\DashboardController->getDataSummaries()
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Dashboard\DashboardController->dashboard()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-01-05 17:51:30 --> Table 'db_book_library.book_stock' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `books`
+LEFT JOIN `book_stock` ON `books`.`id` = `book_stock`.`book_id`
+WHERE `books`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Dashboard\DashboardController.php(55): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Dashboard\DashboardController.php(41): App\Controllers\Dashboard\DashboardController->getDataSummaries()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard\DashboardController->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+ERROR - 2024-01-05 17:51:31 --> mysqli_sql_exception: Table 'db_book_library.book_stock' doesn't exist in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\peminjaman\app\Controllers\Books\BooksController.php(63): CodeIgniter\BaseModel->paginate(20, 'books')
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Books\BooksController->index()
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books\BooksController))
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-01-05 17:51:31 --> Table 'db_book_library.book_stock' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `books`
+LEFT JOIN `book_stock` ON `books`.`id` = `book_stock`.`book_id`
+LEFT JOIN `categories` ON `books`.`category_id` = `categories`.`id`
+LEFT JOIN `racks` ON `books`.`rack_id` = `racks`.`id`
+WHERE `books`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Books\BooksController.php(63): CodeIgniter\BaseModel->paginate(20, 'books')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Books\BooksController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Books\BooksController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+ERROR - 2024-01-05 17:54:03 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', NULL, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\peminjaman\app\Database\Seeds\LoanSeeder.php(54): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\LoanSeeder->run()
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-01-05 18:25:03 --> mysqli_sql_exception: Table 'db_book_library.books' doesn't exist in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Test\Fabricator.php(473): CodeIgniter\Model->insert(Array, true)
+#8 C:\xampp\htdocs\peminjaman\app\Database\Seeds\BookSeeder.php(20): CodeIgniter\Test\Fabricator->create(30)
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\BookSeeder->run()
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#13 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2024-01-05 18:26:53 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', NULL, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\peminjaman\app\Database\Seeds\LoanSeeder.php(54): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\LoanSeeder->run()
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-01-05 18:33:43 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_book_library' in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_book_library', 3306, '', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionCon...')
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Filters\SessionAuth.php(54): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\Filters.php(184): CodeIgniter\Shield\Filters\SessionAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/books', 'before')
+#15 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#18 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_book_library' in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionCon...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+#10 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\shield\src\Filters\SessionAuth.php(54): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Filters\Filters.php(184): CodeIgniter\Shield\Filters\SessionAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#13 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/books', 'before')
+#14 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\peminjaman\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#17 {main}
+CRITICAL - 2024-01-05 18:33:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_book_library'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 VENDORPATH\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 VENDORPATH\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(696): setting('Auth.sessionConfig')
+ 8 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(714): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(401): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionKey('id')
+10 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(385): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 VENDORPATH\codeigniter4\shield\src\Filters\SessionAuth.php(54): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Shield\Filters\SessionAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('admin/books', 'before')
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\peminjaman\\public\\index.php')
+ERROR - 2024-01-05 18:34:03 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_book_library' in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_book_library', 3306, '', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(764): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_book_library' in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(764): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2024-01-05 18:34:12 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_book_library' in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_book_library', 3306, '', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Config.php(110): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_book_library' in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Config.php(110): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2024-01-05 18:34:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_book_library'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\Database.php(66): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(110): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+ERROR - 2024-01-05 18:35:33 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', NULL, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\peminjaman\app\Database\Seeds\LoanSeeder.php(54): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\LoanSeeder->run()
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-01-05 18:59:04 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', NULL, false)
+#4 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\peminjaman\app\Database\Seeds\LoanSeeder.php(54): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\LoanSeeder->run()
+#7 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\peminjaman\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\peminjaman\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}

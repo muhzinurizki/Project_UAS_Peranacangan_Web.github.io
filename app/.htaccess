@@ -1,0 +1,13 @@
+# Aktifkan mod_autoindex
+Options +Indexes
+
+# Konfigurasi tampilan indeks
+IndexOptions FancyIndexing HTMLTable NameWidth=* DescriptionWidth=* SuppressHTMLPreamble
+
+
+# Atur tampilan gambar ikon indeks jika diperlukan
+AddIcon /icons/folder.gif ^^DIRECTORY^^
+AddIcon /icons/blank.gif ^^BLANKICON^^
+
+# Batasi file yang akan ditampilkan pada indeks
+IndexIgnore LICENSE composer.json composer.lock phpunit.xml.dist preload.php
